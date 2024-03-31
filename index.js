@@ -17,7 +17,7 @@ function getText(){
             if (type.indexOf("text") !== 1) {
                 const el = document.getElementById("Public_commit_key");
                 
-                el.children.namedItem("textarea").value = http.responseText;
+                el.getElementsByTagName("textarea")[0].value = http.responseText;
                 
                 el.style.visibility = null;
             }
