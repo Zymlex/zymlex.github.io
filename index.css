@@ -1,0 +1,20 @@
+html {
+  background-color: #c8e0ff;
+}
+
+body {
+  font-size: 140%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+#Public_commit_key > textarea {
+  visibility: hidden;
+}
+
+#Contacts > a {
+  display: block;
+  font-size: 140%;
+}
