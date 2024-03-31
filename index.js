@@ -5,9 +5,6 @@ function init() {
 }
 
 function load_public_key() {
-    // const el = document.getElementById("Public_commit_key");
-    
-    // el.style.visibility = null;
     getText();
 }
 
@@ -18,7 +15,11 @@ function getText(){
         if (http.readyState === 4 && http.status === 200) {
             let type = http.getResponseHeader('Content-Type');
             if (type.indexOf("text") !== 1) {
-                console.log(http.responseText);
+                const el = document.getElementById("Public_commit_key");
+                
+                el.innerText = http.responseText;
+                
+                el.style.visibility = null;
             }
         } else {
             console.log(new Error(`Loading error.\nreadyState: ${http.readyState}\nhttp.status: ${http.status}\n`));
