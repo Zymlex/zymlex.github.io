@@ -22,7 +22,7 @@ function loadPubKey(){
     // http.addEventListener("error", function () {});
     // http.addEventListener("abort", handleEvent);
     
-    http.open('GET', './82A59AD376D5A94E!!', true);
+    http.open('GET', './82A59AD376D5A94E', true);
     http.send(null);
 }
 
