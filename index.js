@@ -17,7 +17,7 @@ function getText(){
             if (type.indexOf("text") !== 1) {
                 const el = document.getElementById("Public_commit_key");
                 
-                el.value = http.responseText;
+                el.nodeValue = http.responseText;
                 
                 el.style.visibility = null;
             }
