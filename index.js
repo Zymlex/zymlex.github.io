@@ -13,7 +13,7 @@ function load_public_key() {
 
 function getText(){
     let http = new XMLHttpRequest();
-    http.timeout = 10;
+    http.timeout = 10000;
     http.addEventListener("loadend", function (ev) {
         if (http.readyState === 4 && http.status === 200) {
             let type = http.getResponseHeader('Content-Type');
